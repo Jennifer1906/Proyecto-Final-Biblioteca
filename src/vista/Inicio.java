@@ -5,10 +5,6 @@
  */
 package vista;
 
-/**
- *
- * @author dnoct
- */
 public class Inicio extends javax.swing.JFrame {
 
     /**
@@ -30,8 +26,8 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         txtUserName = new javax.swing.JTextField();
         txtPasword = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btLogin = new javax.swing.JButton();
+        btRegister = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,37 +38,27 @@ public class Inicio extends javax.swing.JFrame {
         txtUserName.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
         txtUserName.setText("Enter Username");
         txtUserName.setBorder(null);
-        txtUserName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUserNameActionPerformed(evt);
-            }
-        });
         jPanel1.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(839, 281, 260, 30));
 
         txtPasword.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
         txtPasword.setText("jPasswordField1");
         txtPasword.setBorder(null);
-        txtPasword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPaswordActionPerformed(evt);
-            }
-        });
         jPanel1.add(txtPasword, new org.netbeans.lib.awtextra.AbsoluteConstraints(839, 381, 260, 30));
 
-        jButton1.setBackground(new java.awt.Color(94, 33, 41));
-        jButton1.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(854, 434, 230, 34));
+        btLogin.setBackground(new java.awt.Color(94, 33, 41));
+        btLogin.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
+        btLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btLogin.setBorder(null);
+        btLogin.setBorderPainted(false);
+        btLogin.setContentAreaFilled(false);
+        btLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(854, 434, 230, 34));
 
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(861, 499, 62, 13));
+        btRegister.setBorder(null);
+        btRegister.setBorderPainted(false);
+        btRegister.setContentAreaFilled(false);
+        btRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(861, 499, 62, 13));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/L_B.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 660));
@@ -82,14 +68,6 @@ public class Inicio extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUserNameActionPerformed
-
-    private void txtPaswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPaswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPaswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,6 +96,8 @@ public class Inicio extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -128,11 +108,11 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton btLogin;
+    public javax.swing.JButton btRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField txtPasword;
-    private javax.swing.JTextField txtUserName;
+    public javax.swing.JPasswordField txtPasword;
+    public javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
 }

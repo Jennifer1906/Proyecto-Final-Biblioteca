@@ -185,7 +185,7 @@ public class CtrlFrmHome implements ActionListener {
         DefaultTableModel modelo = (DefaultTableModel) home.tbClientesHome.getModel();
         try {
             for (int i = 0; i < clientes.size(); i++) {
-                modelo.addRow(new Object[]{clientes.get(i).getNombre(), clientes.get(i).getCedula(), clientes.get(i).getEdad(), clientes.get(i).getUsuario()});
+                modelo.addRow(new Object[]{clientes.get(i).getIdPersona(), clientes.get(i).getNombres(), clientes.get(i).getEdad(), clientes.get(i).getUsuario()});
             }
             home.tbClientesHome.setModel(modelo);
             home.tbClientesPClientes.setModel(modelo);

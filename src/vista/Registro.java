@@ -5,10 +5,7 @@
  */
 package vista;
 
-/**
- *
- * @author dnoct
- */
+
 public class Registro extends javax.swing.JFrame {
 
     /**
@@ -29,11 +26,11 @@ public class Registro extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         txtUserName = new javax.swing.JTextField();
-        txtPasword1 = new javax.swing.JPasswordField();
+        txtPaswordConfir = new javax.swing.JPasswordField();
         txtPasword = new javax.swing.JPasswordField();
-        txtUserName1 = new javax.swing.JTextField();
-        txtUserName2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtUserLastN = new javax.swing.JTextField();
+        txtUseerUser = new javax.swing.JTextField();
+        btRegister = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,36 +43,36 @@ public class Registro extends javax.swing.JFrame {
         txtUserName.setBorder(null);
         jPanel1.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 170, 260, 30));
 
-        txtPasword1.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
-        txtPasword1.setText("jPasswordField1");
-        txtPasword1.setBorder(null);
-        jPanel1.add(txtPasword1, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 483, 260, 30));
+        txtPaswordConfir.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
+        txtPaswordConfir.setText("jPasswordField1");
+        txtPaswordConfir.setBorder(null);
+        jPanel1.add(txtPaswordConfir, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 483, 260, 30));
 
         txtPasword.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
         txtPasword.setText("jPasswordField1");
         txtPasword.setBorder(null);
         jPanel1.add(txtPasword, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 404, 260, 30));
 
-        txtUserName1.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
-        txtUserName1.setText("Enter Birthdate");
-        txtUserName1.setBorder(null);
-        jPanel1.add(txtUserName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 248, 260, 30));
+        txtUserLastN.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
+        txtUserLastN.setText("Enter Last Name");
+        txtUserLastN.setBorder(null);
+        jPanel1.add(txtUserLastN, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 248, 260, 30));
 
-        txtUserName2.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
-        txtUserName2.setText("Enter Username");
-        txtUserName2.setBorder(null);
-        jPanel1.add(txtUserName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 326, 260, 30));
+        txtUseerUser.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
+        txtUseerUser.setText("Enter Username");
+        txtUseerUser.setBorder(null);
+        jPanel1.add(txtUseerUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 326, 260, 30));
 
-        jButton1.setBackground(new java.awt.Color(94, 33, 41));
-        jButton1.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 230, 34));
+        btRegister.setBackground(new java.awt.Color(94, 33, 41));
+        btRegister.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
+        btRegister.setForeground(new java.awt.Color(255, 255, 255));
+        btRegister.setBorder(null);
+        btRegister.setBorderPainted(false);
+        btRegister.setContentAreaFilled(false);
+        btRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 230, 34));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/R_B.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/B_R.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 660));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 660));
@@ -111,6 +108,8 @@ public class Registro extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -121,13 +120,13 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton btRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField txtPasword;
-    private javax.swing.JPasswordField txtPasword1;
-    private javax.swing.JTextField txtUserName;
-    private javax.swing.JTextField txtUserName1;
-    private javax.swing.JTextField txtUserName2;
+    public javax.swing.JPasswordField txtPasword;
+    public javax.swing.JPasswordField txtPaswordConfir;
+    public javax.swing.JTextField txtUseerUser;
+    public javax.swing.JTextField txtUserLastN;
+    public javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
 }
