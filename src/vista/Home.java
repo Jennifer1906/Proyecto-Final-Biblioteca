@@ -25,11 +25,11 @@ public class Home extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        panelAgg = new javax.swing.JPanel();
+        panelDocumentos = new javax.swing.JPanel();
         btAgregar = new javax.swing.JButton();
-        panelEliminar = new javax.swing.JPanel();
+        panelDevolucion = new javax.swing.JPanel();
         btEliminar = new javax.swing.JButton();
-        panelMod = new javax.swing.JPanel();
+        panelPrestamo = new javax.swing.JPanel();
         btModificar = new javax.swing.JButton();
         panelClientes = new javax.swing.JPanel();
         btClientes = new javax.swing.JButton();
@@ -107,8 +107,8 @@ public class Home extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(72, 4, 3));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelAgg.setBackground(new java.awt.Color(72, 4, 3));
-        panelAgg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelDocumentos.setBackground(new java.awt.Color(72, 4, 3));
+        panelDocumentos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btAgregar.setBackground(new java.awt.Color(180, 81, 72));
         btAgregar.setFont(new java.awt.Font("Bell MT", 3, 18)); // NOI18N
@@ -116,13 +116,13 @@ public class Home extends javax.swing.JFrame {
         btAgregar.setText("Documentos");
         btAgregar.setBorderPainted(false);
         btAgregar.setContentAreaFilled(false);
-        btAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        panelAgg.add(btAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
+        btAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        panelDocumentos.add(btAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
 
-        jPanel4.add(panelAgg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 213, 150, 40));
+        jPanel4.add(panelDocumentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 213, 150, 40));
 
-        panelEliminar.setBackground(new java.awt.Color(72, 4, 3));
-        panelEliminar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelDevolucion.setBackground(new java.awt.Color(72, 4, 3));
+        panelDevolucion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btEliminar.setBackground(new java.awt.Color(180, 81, 72));
         btEliminar.setFont(new java.awt.Font("Bell MT", 3, 18)); // NOI18N
@@ -130,13 +130,18 @@ public class Home extends javax.swing.JFrame {
         btEliminar.setText("Devolucion");
         btEliminar.setBorderPainted(false);
         btEliminar.setContentAreaFilled(false);
-        btEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        panelEliminar.add(btEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
+        btEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEliminarActionPerformed(evt);
+            }
+        });
+        panelDevolucion.add(btEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
 
-        jPanel4.add(panelEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 293, 150, 40));
+        jPanel4.add(panelDevolucion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 293, 150, 40));
 
-        panelMod.setBackground(new java.awt.Color(72, 4, 3));
-        panelMod.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelPrestamo.setBackground(new java.awt.Color(72, 4, 3));
+        panelPrestamo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btModificar.setBackground(new java.awt.Color(180, 81, 72));
         btModificar.setFont(new java.awt.Font("Bell MT", 3, 18)); // NOI18N
@@ -144,10 +149,10 @@ public class Home extends javax.swing.JFrame {
         btModificar.setText("Prestamo");
         btModificar.setBorderPainted(false);
         btModificar.setContentAreaFilled(false);
-        btModificar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        panelMod.add(btModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
+        btModificar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        panelPrestamo.add(btModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
 
-        jPanel4.add(panelMod, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 253, 150, 40));
+        jPanel4.add(panelPrestamo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 253, 150, 40));
 
         panelClientes.setBackground(new java.awt.Color(72, 4, 3));
         panelClientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -158,7 +163,7 @@ public class Home extends javax.swing.JFrame {
         btClientes.setText("Clientes");
         btClientes.setBorderPainted(false);
         btClientes.setContentAreaFilled(false);
-        btClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         panelClientes.add(btClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
 
         jPanel4.add(panelClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 333, 150, 40));
@@ -172,7 +177,7 @@ public class Home extends javax.swing.JFrame {
         btHome.setText("Home");
         btHome.setBorderPainted(false);
         btHome.setContentAreaFilled(false);
-        btHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btHome.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         panelHome.add(btHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 40));
 
         jPanel4.add(panelHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 173, 150, 40));
@@ -493,6 +498,10 @@ public class Home extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEliminarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btEliminarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -585,11 +594,11 @@ public class Home extends javax.swing.JFrame {
     public javax.swing.JPanel pDevolucion;
     public javax.swing.JPanel pHome;
     public javax.swing.JPanel pPrestamo;
-    public javax.swing.JPanel panelAgg;
     public javax.swing.JPanel panelClientes;
-    public javax.swing.JPanel panelEliminar;
+    public javax.swing.JPanel panelDevolucion;
+    public javax.swing.JPanel panelDocumentos;
     public javax.swing.JPanel panelHome;
-    public javax.swing.JPanel panelMod;
+    public javax.swing.JPanel panelPrestamo;
     public javax.swing.JTable tbClientesHome;
     public javax.swing.JTable tbClientesPClientes;
     public javax.swing.JTable tbDocs;

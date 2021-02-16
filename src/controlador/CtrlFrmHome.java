@@ -39,9 +39,9 @@ public class CtrlFrmHome implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == home.btAgregar) {
-            home.panelAgg.setBackground(new Color(180, 81, 72));
-            home.panelEliminar.setBackground(new Color(72, 4, 3));
-            home.panelMod.setBackground(new Color(72, 4, 3));
+            home.panelDocumentos.setBackground(new Color(180, 81, 72));
+            home.panelDevolucion.setBackground(new Color(72, 4, 3));
+            home.panelPrestamo.setBackground(new Color(72, 4, 3));
             home.panelClientes.setBackground(new Color(72, 4, 3));
             home.panelHome.setBackground(new Color(72, 4, 3));
 
@@ -51,9 +51,9 @@ public class CtrlFrmHome implements ActionListener {
             home.jLayeredPane1.revalidate();
         }
         if (e.getSource() == home.btEliminar) {
-            home.panelEliminar.setBackground(new Color(180, 81, 72));
-            home.panelAgg.setBackground(new Color(72, 4, 3));
-            home.panelMod.setBackground(new Color(72, 4, 3));
+            home.panelDevolucion.setBackground(new Color(180, 81, 72));
+            home.panelDocumentos.setBackground(new Color(72, 4, 3));
+            home.panelPrestamo.setBackground(new Color(72, 4, 3));
             home.panelClientes.setBackground(new Color(72, 4, 3));
             home.panelHome.setBackground(new Color(72, 4, 3));
 
@@ -63,9 +63,9 @@ public class CtrlFrmHome implements ActionListener {
             home.jLayeredPane1.revalidate();
         }
         if (e.getSource() == home.btClientes) {
-            home.panelEliminar.setBackground(new Color(72, 4, 3));
-            home.panelAgg.setBackground(new Color(72, 4, 3));
-            home.panelMod.setBackground(new Color(72, 4, 3));
+            home.panelDevolucion.setBackground(new Color(72, 4, 3));
+            home.panelDocumentos.setBackground(new Color(72, 4, 3));
+            home.panelPrestamo.setBackground(new Color(72, 4, 3));
             home.panelClientes.setBackground(new Color(180, 81, 72));
             home.panelHome.setBackground(new Color(72, 4, 3));
 
@@ -75,9 +75,9 @@ public class CtrlFrmHome implements ActionListener {
             home.jLayeredPane1.revalidate();
         }
         if (e.getSource() == home.btModificar) {
-            home.panelEliminar.setBackground(new Color(72, 4, 3));
-            home.panelAgg.setBackground(new Color(72, 4, 3));
-            home.panelMod.setBackground(new Color(180, 81, 72));
+            home.panelDevolucion.setBackground(new Color(72, 4, 3));
+            home.panelDocumentos.setBackground(new Color(72, 4, 3));
+            home.panelPrestamo.setBackground(new Color(180, 81, 72));
             home.panelClientes.setBackground(new Color(72, 4, 3));
             home.panelHome.setBackground(new Color(72, 4, 3));
 
@@ -87,9 +87,9 @@ public class CtrlFrmHome implements ActionListener {
             home.jLayeredPane1.revalidate();
         }
         if (e.getSource() == home.btHome) {
-            home.panelEliminar.setBackground(new Color(72, 4, 3));
-            home.panelAgg.setBackground(new Color(72, 4, 3));
-            home.panelMod.setBackground(new Color(72, 4, 3));
+            home.panelDevolucion.setBackground(new Color(72, 4, 3));
+            home.panelDocumentos.setBackground(new Color(72, 4, 3));
+            home.panelPrestamo.setBackground(new Color(72, 4, 3));
             home.panelClientes.setBackground(new Color(72, 4, 3));
             home.panelHome.setBackground(new Color(180, 81, 72));
 
@@ -116,6 +116,11 @@ public class CtrlFrmHome implements ActionListener {
                 home.txtdato2.setText("");
             }
         }
+        
+         /**
+        * Metodo que permite agregar información de los documentos 
+        *
+        */
         if (e.getSource() == home.btAggPAgg) {
             if (home.txtCodigo.getText().length() > 0 && home.txtTitulo.getText().length() > 0 && home.txtAutor.getText().length() > 0 && home.txtIdioma.getText().length() > 0 && home.txtAño.getText().length() > 0 && home.txtPais.getText().length() > 0 && home.txtdato1.getText().length() > 0 && home.txtdato2.getText().length() > 0) {
                 String codigo = home.txtCodigo.getText();
@@ -164,6 +169,10 @@ public class CtrlFrmHome implements ActionListener {
 
     }
 
+     /**
+     * Metodo que permite cargar los datos de los documentos en la tabla 
+     *
+     */
     private void cargarTablaDocs() {
         DefaultTableModel modelo = (DefaultTableModel) home.tbDocs.getModel();
         ArrayList<Documento> documentos = ctrlDocs.getDocumentos();
@@ -181,11 +190,15 @@ public class CtrlFrmHome implements ActionListener {
         }
     }
 
+    /**
+     * Metodo que permite cargar los datos de los clientes en la tabla 
+     *
+     */
     private void cargarTablaClientes() {
         DefaultTableModel modelo = (DefaultTableModel) home.tbClientesHome.getModel();
         try {
             for (int i = 0; i < clientes.size(); i++) {
-                modelo.addRow(new Object[]{clientes.get(i).getIdPersona(), clientes.get(i).getNombres(), clientes.get(i).getEdad(), clientes.get(i).getUsuario()});
+                modelo.addRow(new Object[]{clientes.get(i).getIdPersona(), clientes.get(i).getNombre(), clientes.get(i).getApellidos(), clientes.get(i).getUsuario()});
             }
             home.tbClientesHome.setModel(modelo);
             home.tbClientesPClientes.setModel(modelo);
@@ -193,6 +206,11 @@ public class CtrlFrmHome implements ActionListener {
         }
     }
 
+    /**
+     * Metodo que permite limpiar los datos de la tabla 
+     *
+     * @param tabla
+     */
     private void limpiar(JTable tabla) {
         try {
             DefaultTableModel model = (DefaultTableModel) tabla.getModel();

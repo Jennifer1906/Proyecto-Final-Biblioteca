@@ -19,7 +19,7 @@ public class Documento {
     public Documento() {
     }
 
-    public Documento(String codigo, String titulo, String autor, String idioma, String Año, String pais, boolean estado, int tipo) {
+    public Documento(String codigo, String titulo, String autor, String idioma, String Año, String pais, boolean estado, int tipo ) {
         this.codigo = codigo;
         this.titulo = titulo;
         this.autor = autor;
@@ -28,6 +28,26 @@ public class Documento {
         this.pais = pais;
         this.estado = estado;
         this.tipo = tipo;
+    }
+    public Documento(String codigo, String titulo, String autor, String idioma, String Año, String pais, boolean estado, Libro libro ) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.idioma = idioma;
+        this.Año = Año;
+        this.pais = pais;
+        this.estado = estado;
+        this.libro = libro;
+    }
+    public Documento(String codigo, String titulo, String autor, String idioma, String Año, String pais, boolean estado, Tesis tesis ) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.idioma = idioma;
+        this.Año = Año;
+        this.pais = pais;
+        this.estado = estado;
+        this.tesis = tesis;
     }
 
     public String getCodigo() {
@@ -92,31 +112,6 @@ public class Documento {
 
     public void setTipo(int tipo) {
         this.tipo = tipo;
-    }
-
-    public void ingresarDocumento() {
-        if (tipo == 1) {
-            String volumen = JOptionPane.showInputDialog(null, "Ingrese volumen");
-            String editorial = JOptionPane.showInputDialog(null, "Ingrese editorial");
-            Libro l = new Libro(volumen, editorial);
-            libro = l;
-        } else {
-            String carrera_tes = JOptionPane.showInputDialog(null, "Ingrese la carrera de la tesis");
-            String director_tes = JOptionPane.showInputDialog(null, "Ingrese el director de la tesis");
-            Tesis t = new Tesis(carrera_tes, director_tes);
-            tesis = t;
-        }
-    }
-
-    public void modificarDocumento(int tipo) {
-        if (tipo == 1) {
-
-        } else {
-        }
-    }
-
-    public void eliminarDocumento(int tipo) {
-
     }
 
     public Libro getLibro() {

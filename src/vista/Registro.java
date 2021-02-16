@@ -39,27 +39,22 @@ public class Registro extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtUserName.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
-        txtUserName.setText("Enter Name");
         txtUserName.setBorder(null);
         jPanel1.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 170, 260, 30));
 
         txtPaswordConfir.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
-        txtPaswordConfir.setText("jPasswordField1");
         txtPaswordConfir.setBorder(null);
         jPanel1.add(txtPaswordConfir, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 483, 260, 30));
 
         txtPasword.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
-        txtPasword.setText("jPasswordField1");
         txtPasword.setBorder(null);
         jPanel1.add(txtPasword, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 404, 260, 30));
 
         txtUserLastN.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
-        txtUserLastN.setText("Enter Last Name");
         txtUserLastN.setBorder(null);
         jPanel1.add(txtUserLastN, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 248, 260, 30));
 
         txtUseerUser.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
-        txtUseerUser.setText("Enter Username");
         txtUseerUser.setBorder(null);
         jPanel1.add(txtUseerUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 326, 260, 30));
 
@@ -69,7 +64,7 @@ public class Registro extends javax.swing.JFrame {
         btRegister.setBorder(null);
         btRegister.setBorderPainted(false);
         btRegister.setContentAreaFilled(false);
-        btRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(btRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 230, 34));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/B_R.png"))); // NOI18N

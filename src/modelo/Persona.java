@@ -13,43 +13,28 @@ public class Persona {
 
     private static int id = 1;
     private int idPersona;
-    private String nombres;
-    private String cedula;
+    private String nombre;
     private String apellidos;
-    private String direccion;
-    private String telefono;
-    private String Email;
     private String Usuario;
     private String clave;
-    private Rol rol;
 
     public Persona() {
         idPersona = Persona.id++;
     }
 
-    public Persona(int idPersona, String nombres, String cedula, String apellidos, String direccion, String telefono, String Email, String Usuario, String clave, Rol rol) {
-        this.idPersona = idPersona;
-        this.nombres = nombres;
-        this.cedula = cedula;
+    public Persona(String nombre, String apellidos, String Usuario, String clave) {
+        this.nombre = nombre;
         this.apellidos = apellidos;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.Email = Email;
         this.Usuario = Usuario;
         this.clave = clave;
-        this.rol = rol;
     }
 
-    public Persona(String nombres, String cedula, String apellidos, String direccion, String telefono, String Email, Rol rol, String Usuario, String clave) {
-        this.nombres = nombres;
-        this.cedula = cedula;
-        this.apellidos = apellidos;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.Email = Email;
-        this.Usuario = Usuario;
-        this.clave = clave;
-        this.rol = rol;
+    public static int getId() {
+        return id;
+    }
+
+    public static void setId(int aId) {
+        id = aId;
     }
 
     public int getIdPersona() {
@@ -60,20 +45,12 @@ public class Persona {
         this.idPersona = idPersona;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellidos() {
@@ -82,50 +59,6 @@ public class Persona {
 
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String Email) {
-        this.Email = Email;
-    }
-
-    public Rol getRol() {
-        return rol;
-    }
-
-    public void setRol(Rol rol) {
-        this.rol = rol;
-    }
-
-    public void registrarUsuario() {
-
-    }
-
-    public void modificarUsuario() {
-
-    }
-
-    public void eliminarUsuario() {
-
     }
 
     public String getUsuario() {

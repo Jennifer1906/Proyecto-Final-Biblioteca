@@ -28,6 +28,7 @@ public class Inicio extends javax.swing.JFrame {
         txtPasword = new javax.swing.JPasswordField();
         btLogin = new javax.swing.JButton();
         btRegister = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -36,12 +37,10 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtUserName.setFont(new java.awt.Font("Comic Sans MS", 2, 16)); // NOI18N
-        txtUserName.setText("Enter Username");
         txtUserName.setBorder(null);
         jPanel1.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(839, 281, 260, 30));
 
         txtPasword.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
-        txtPasword.setText("jPasswordField1");
         txtPasword.setBorder(null);
         jPanel1.add(txtPasword, new org.netbeans.lib.awtextra.AbsoluteConstraints(839, 381, 260, 30));
 
@@ -51,14 +50,19 @@ public class Inicio extends javax.swing.JFrame {
         btLogin.setBorder(null);
         btLogin.setBorderPainted(false);
         btLogin.setContentAreaFilled(false);
-        btLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(btLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(854, 434, 230, 34));
 
         btRegister.setBorder(null);
         btRegister.setBorderPainted(false);
         btRegister.setContentAreaFilled(false);
-        btRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(btRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(861, 499, 62, 13));
+
+        jLabel2.setFont(new java.awt.Font("Bodoni MT", 3, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("SISTEMA BIBLIOTECARIO");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 160, 350, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/L_B.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 660));
@@ -111,6 +115,7 @@ public class Inicio extends javax.swing.JFrame {
     public javax.swing.JButton btLogin;
     public javax.swing.JButton btRegister;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JPasswordField txtPasword;
     public javax.swing.JTextField txtUserName;
